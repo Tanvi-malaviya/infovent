@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import {
   Code2,
@@ -11,119 +11,141 @@ import {
   Rocket,
 } from "lucide-react";
 
+const SOLUTIONS = [
+  {
+    title: "Web Development",
+    icon: Code2,
+    desc: "We build fast, scalable web applications designed for performance, SEO, and long-term business growth.",
+  },
+  {
+    title: "Mobile Applications",
+    icon: Smartphone,
+    desc: "High-quality cross-platform apps with seamless UX and enterprise-grade security.",
+  },
+  {
+    title: "Cloud Infrastructure",
+    icon: Cloud,
+    desc: "Secure, scalable cloud architecture with optimized deployment pipelines.",
+  },
+  {
+    title: "Cyber Security",
+    icon: ShieldCheck,
+    desc: "Advanced security systems to protect data, infrastructure, and user privacy.",
+  },
+  {
+    title: "AI Automation",
+    icon: Cpu,
+    desc: "Smart AI solutions to automate operations and improve business efficiency.",
+  },
+  {
+    title: "Digital Transformation",
+    icon: Rocket,
+    desc: "Complete digital modernization strategies to future-proof your business.",
+  },
+];
+
 export default function SolutionsShowcase() {
   const [active, setActive] = useState(0);
-
-  const solutions = [
-    {
-      title: "Web Development",
-      icon: Code2,
-      desc: "We build fast, scalable web applications designed for performance, SEO, and long-term business growth.",
-    },
-    {
-      title: "Mobile Applications",
-      icon: Smartphone,
-      desc: "High-quality cross-platform apps with seamless UX and enterprise-grade security.",
-    },
-    {
-      title: "Cloud Infrastructure",
-      icon: Cloud,
-      desc: "Secure, scalable cloud architecture with optimized deployment pipelines.",
-    },
-    {
-      title: "Cyber Security",
-      icon: ShieldCheck,
-      desc: "Advanced security systems to protect data, infrastructure, and user privacy.",
-    },
-    {
-      title: "AI Automation",
-      icon: Cpu,
-      desc: "Smart AI solutions to automate operations and improve business efficiency.",
-    },
-    {
-      title: "Digital Transformation",
-      icon: Rocket,
-      desc: "Complete digital modernization strategies to future-proof your business.",
-    },
-  ];
-
-  const ActiveIcon = solutions[active].icon;
+  const ActiveIcon = SOLUTIONS[active].icon;
 
   return (
-    <section className="py-32 bg-background relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-background relative overflow-hidden">
+      {/* Background Glow - Scaled for mobile */}
+      <div className="absolute w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-primary/10 blur-[80px] md:blur-[140px] rounded-full -top-20 -left-20 pointer-events-none" />
+      <div className="absolute w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-blue-500/10 blur-[80px] md:blur-[140px] rounded-full bottom-0 right-0 pointer-events-none" />
 
-      {/* Background Glow */}
-      <div className="absolute w-[600px] h-[600px] bg-primary/10 blur-[140px] rounded-full -top-40 -left-40" />
-      <div className="absolute w-[500px] h-[500px] bg-blue-500/10 blur-[140px] rounded-full bottom-0 right-0" />
+      <div className="max-w-7xl mx-auto px-6 relative">
+        <h2 className="text-3xl md:text-5xl font-bold mb-10 md:mb-16 text-center lg:text-left">
+          Our Core <span className="text-primary">Solutions</span>
+        </h2>
 
-      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center relative">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+          
+          {/* LEFT — SOLUTION LIST */}
+          <div className="flex flex-col gap-3 md:gap-4 order-2 lg:order-1">
+            {SOLUTIONS.map((item, i) => {
+              const Icon = item.icon;
+              const isActive = active === i;
 
-        {/* LEFT — SOLUTION LIST */}
-        <div className="space-y-6">
-          <h2 className="text-5xl font-bold mb-12">
-            Our Core <span className="text-primary">Solutions</span>
-          </h2>
+              return (
+                <motion.div
+                  key={item.title}
+                  onClick={() => setActive(i)}
+                  whileHover={{ x: 5 }}
+                  className={`cursor-pointer p-4 md:p-6 rounded-xl border transition-all duration-300
+                  ${
+                    isActive
+                      ? "border-primary bg-primary/10 shadow-lg"
+                      : "border-border bg-card/50 hover:border-primary/30"
+                  }`}
+                >
+                  <div className="flex items-center gap-4">
+                    <Icon
+                      className={`${isActive ? "text-primary" : "text-foreground/50"}`}
+                      size={24}
+                    />
+                    <h3 className={`font-semibold text-base md:text-lg transition-colors ${isActive ? "text-foreground" : "text-foreground/70"}`}>
+                      {item.title}
+                    </h3>
+                  </div>
 
-          {solutions.map((item, i) => {
-            const Icon = item.icon;
-
-            return (
-              <motion.div
-                key={i}
-                onClick={() => setActive(i)}
-                whileHover={{ scale: 1.03 }}
-                className={`cursor-pointer p-6 rounded-xl border transition-all
-                ${
-                  active === i
-                    ? "border-primary bg-primary/10 shadow-lg"
-                    : "border-border bg-card/50"
-                }`}
-              >
-                <div className="flex items-center gap-4">
-                  <Icon
-                    className={`${
-                      active === i ? "text-primary" : "text-foreground/50"
-                    }`}
-                    size={28}
-                  />
-                  <h3 className="font-semibold text-lg">{item.title}</h3>
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        {/* RIGHT — ACTIVE PANEL */}
-        <motion.div
-          key={active}
-          initial={{ opacity: 0, x: 60 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative p-12 rounded-3xl bg-card/60 backdrop-blur-xl border border-primary/20 shadow-2xl"
-        >
-          {/* Icon */}
-          <div className="w-20 h-20 flex items-center justify-center rounded-2xl bg-primary/10 border border-primary/30 mb-8">
-            <ActiveIcon size={40} className="text-primary" />
+                  {/* Mobile Only Description: Shows inside the card for better UX on small screens */}
+                  <AnimatePresence>
+                    {isActive && (
+                      <motion.div 
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="lg:hidden overflow-hidden"
+                      >
+                        <p className="mt-4 text-sm text-foreground/70 leading-relaxed border-t border-primary/20 pt-4">
+                          {item.desc}
+                        </p>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              );
+            })}
           </div>
 
-          {/* Title */}
-          <h3 className="text-3xl font-bold mb-6">
-            {solutions[active].title}
-          </h3>
+          {/* RIGHT — ACTIVE PANEL (Hidden on Mobile, shown on Large) */}
+          <div className="hidden lg:block sticky top-32 order-1 lg:order-2">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={active}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4 }}
+                className="relative p-10 xl:p-12 rounded-3xl bg-card/60 backdrop-blur-xl border border-primary/20 shadow-2xl overflow-hidden"
+              >
+                {/* Icon */}
+                <div className="w-16 h-16 xl:w-20 xl:h-20 flex items-center justify-center rounded-2xl bg-primary/10 border border-primary/30 mb-8">
+                  <ActiveIcon size={36} className="text-primary" />
+                </div>
 
-          {/* Description */}
-          <p className="text-lg text-foreground/70 leading-relaxed">
-            {solutions[active].desc}
-          </p>
+                {/* Title */}
+                <h3 className="text-3xl font-bold mb-6 text-foreground">
+                  {SOLUTIONS[active].title}
+                </h3>
 
-          {/* Animated Glow Line */}
-          <motion.div
-            className="absolute bottom-0 left-0 h-[3px] bg-primary"
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            transition={{ duration: 0.8 }}
-          />
-        </motion.div>
+                {/* Description */}
+                <p className="text-lg text-foreground/70 leading-relaxed">
+                  {SOLUTIONS[active].desc}
+                </p>
+
+                {/* Animated Glow Line */}
+                <motion.div
+                  className="absolute bottom-0 left-0 h-[3px] bg-primary"
+                  initial={{ width: 0 }}
+                  animate={{ width: "100%" }}
+                  transition={{ duration: 0.8 }}
+                />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </div>
       </div>
     </section>
   );

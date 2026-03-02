@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Button from "@/src/common/Button";
 
 // Custom SVG Icons
 const ExpertTeamIcon = ({ size = 26, className = "" }) => (
@@ -71,7 +72,7 @@ export default function WhyChooseUsSection() {
   const reasons = [
     {
       title: "Expert Team",
-      description: "Our team consists of experienced professionals with expertise across multiple technologies and industries. We combine technical excellence with creative thinking.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: ExpertTeamIcon,
       color: "from-blue-500 to-indigo-600",
       bgColor: "bg-blue-500/10",
@@ -79,7 +80,7 @@ export default function WhyChooseUsSection() {
     },
     {
       title: "Cutting-Edge Technology",
-      description: "We leverage the latest technologies and frameworks to deliver innovative and future-ready solutions that set you apart from competitors.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: TechnologyIcon,
       color: "from-green-500 to-teal-600",
       bgColor: "bg-green-500/10",
@@ -87,7 +88,7 @@ export default function WhyChooseUsSection() {
     },
     {
       title: "Client-Centric Approach",
-      description: "We prioritize your business goals and work closely with you to ensure the best outcomes. Your success is our primary objective.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: ClientFocusIcon,
       color: "from-purple-500 to-pink-600",
       bgColor: "bg-purple-500/10",
@@ -95,7 +96,7 @@ export default function WhyChooseUsSection() {
     },
     {
       title: "Quality Assurance",
-      description: "Rigorous testing and quality assurance processes ensure reliable, secure, and high-performing solutions that exceed industry standards.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: QualityIcon,
       color: "from-orange-500 to-red-600",
       bgColor: "bg-orange-500/10",
@@ -103,7 +104,7 @@ export default function WhyChooseUsSection() {
     },
     {
       title: "Timely Delivery",
-      description: "Our proven agile methodology ensures fast delivery without compromising quality. We respect your time and project deadlines.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: TimelyIcon,
       color: "from-yellow-500 to-amber-600",
       bgColor: "bg-yellow-500/10",
@@ -111,7 +112,7 @@ export default function WhyChooseUsSection() {
     },
     {
       title: "Ongoing Support",
-      description: "We're with you for the long haul - from initial planning to deployment and ongoing maintenance. 24/7 support to ensure smooth operations.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
       icon: SupportIcon,
       color: "from-indigo-500 to-purple-600",
       bgColor: "bg-indigo-500/10",
@@ -129,19 +130,19 @@ export default function WhyChooseUsSection() {
   const highlights = [
     {
       title: "24/7 Support",
-      description: "Round-the-clock support to ensure your systems run smoothly at all times with our dedicated support team.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ",
       icon: Support247Icon,
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "Agile Methodology",
-      description: "Flexible and iterative development approach that adapts to your changing requirements and delivers faster results.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: AgileIcon,
       color: "from-green-500 to-emerald-500"
     },
     {
       title: "Continuous Innovation",
-      description: "We constantly research and adopt new technologies to keep your solutions cutting-edge and future-proof.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: InnovationIcon,
       color: "from-purple-500 to-pink-500"
     }
@@ -240,12 +241,12 @@ export default function WhyChooseUsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header with animated elements */}
         <motion.div 
-          className="text-center mb-20"
+          className="text-center mb-10"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="inline-block px-6 py-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 mb-8">
+          <div className="inline-block px-6 py-3 bg-gradient-to-r from-primary/20 to-accent/20 rounded-full border border-primary/30 mb-4">
             <span className="text-primary font-semibold text-lg">Why Choose Us</span>
           </div>
           
@@ -254,7 +255,7 @@ export default function WhyChooseUsSection() {
           </h2>
           
           <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-            Discover what sets us apart and why industry leaders trust us with their most critical projects
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
           </p>
         </motion.div>
 
@@ -386,7 +387,7 @@ export default function WhyChooseUsSection() {
         </motion.div>
 
         {/* CTA Section */}
-        <motion.div 
+        {/* <motion.div 
           className="mt-20 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -400,27 +401,26 @@ export default function WhyChooseUsSection() {
               Ready to Experience the Difference?
             </h3>
             <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto relative z-10">
-              Join hundreds of satisfied clients who have transformed their business with Infovent
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
-              <motion.button 
-                className="px-8 py-4 bg-white text-primary rounded-lg font-bold text-lg hover:bg-foreground/10 transition-all duration-300 shadow-lg hover:shadow-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get Started Today
-              </motion.button>
-              <motion.button 
-                className="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white hover:text-primary transition-all duration-300 hover:shadow-xl"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Schedule a Call
-              </motion.button>
-            </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+
+  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+    <Button variant="cta" className="px-10 py-4 text-lg">
+      Get Started Today →
+    </Button>
+  </motion.div>
+
+  <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+    <Button variant="outlineLight" className="px-10 py-4 text-lg">
+      Schedule a Call
+    </Button>
+  </motion.div>
+
+</div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

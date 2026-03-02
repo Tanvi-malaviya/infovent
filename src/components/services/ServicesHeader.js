@@ -129,8 +129,7 @@ export default function ServicesHeader() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-foreground/80 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
-            Comprehensive technology services designed to transform your business and drive sustainable growth. 
-            From concept to deployment, we deliver excellence at every stage.
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </motion.p>
 
           {/* Service categories preview */}

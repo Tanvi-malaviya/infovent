@@ -5,65 +5,10 @@ import { motion } from 'framer-motion';
 import { Zap, Target, Lock, Check, Star, Clock, Globe } from 'lucide-react';
 
 export default function ServicesCTA() {
-  const [activePackage, setActivePackage] = useState(0);
+  
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const packages = [
-    {
-      name: "Starter",
-      price: "$2,999",
-      period: "one-time",
-      description: "Perfect for small businesses and startups looking to establish their digital presence",
-      features: [
-        "Basic Website Development",
-        "Responsive Design",
-        "SEO Optimization",
-        "3 Months Support",
-        "1 Revision Round"
-      ],
-      color: "from-blue-500 to-cyan-500",
-      bgColor: "bg-blue-500/10",
-      borderColor: "border-blue-500",
-      popular: false
-    },
-    {
-      name: "Professional",
-      price: "$7,999",
-      period: "one-time",
-      description: "Ideal for growing businesses requiring advanced features and custom functionality",
-      features: [
-        "Custom Web Application",
-        "Advanced Features",
-        "Database Integration",
-        "6 Months Support",
-        "3 Revision Rounds",
-        "Performance Optimization"
-      ],
-      color: "from-purple-500 to-pink-500",
-      bgColor: "bg-purple-500/10",
-      borderColor: "border-purple-500",
-      popular: true
-    },
-    {
-      name: "Enterprise",
-      price: "Custom",
-      period: "solution",
-      description: "Comprehensive enterprise solutions with full-scale development and ongoing support",
-      features: [
-        "Full-Stack Development",
-        "Enterprise Architecture",
-        "Advanced Security",
-        "12 Months Support",
-        "Unlimited Revisions",
-        "Dedicated Project Manager",
-        "24/7 Support"
-      ],
-      color: "from-orange-500 to-red-500",
-      bgColor: "bg-orange-500/10",
-      borderColor: "border-orange-500",
-      popular: false
-    }
-  ];
+ 
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -94,7 +39,7 @@ export default function ServicesCTA() {
   };
 
   return (
-    <section className="relative py-20 bg-gradient-to-b from-background to-secondary overflow-hidden">
+    <section className="relative py-10 bg-gradient-to-b from-background to-secondary overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         {[...Array(15)].map((_, i) => (
@@ -143,7 +88,7 @@ export default function ServicesCTA() {
               Ready to Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Business</span>?
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto mb-12">
-              Choose the perfect package for your needs or let us create a custom solution tailored to your specific requirements
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor  Aenean massa. 
             </p>
           </motion.div>
 
@@ -160,7 +105,7 @@ export default function ServicesCTA() {
                 Let's Discuss Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Project</span>
               </h3>
               <p className="text-lg text-foreground/80 mb-8">
-                Have a unique project in mind? Our team is ready to help you bring your vision to life with a custom solution designed specifically for your business needs.
+               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
               </p>
               
               <div className="space-y-6">
@@ -170,7 +115,7 @@ export default function ServicesCTA() {
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-2">Fast Response Time</h4>
-                    <p className="text-foreground/70">We typically respond to inquiries within 2 hours during business days</p>
+                    <p className="text-foreground/70">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                   </div>
                 </div>
                 
@@ -180,7 +125,7 @@ export default function ServicesCTA() {
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-2">Tailored Solutions</h4>
-                    <p className="text-foreground/70">Every project gets a customized approach based on your specific requirements</p>
+                    <p className="text-foreground/70">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                   </div>
                 </div>
                 
@@ -190,7 +135,7 @@ export default function ServicesCTA() {
                   </div>
                   <div>
                     <h4 className="font-bold text-foreground mb-2">Confidential Consultation</h4>
-                    <p className="text-foreground/70">Your project details are kept completely confidential throughout our discussion</p>
+                    <p className="text-foreground/70">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
                   </div>
                 </div>
               </div>
@@ -202,7 +147,7 @@ export default function ServicesCTA() {
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 hover:opacity-10 rounded-2xl transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 hover:opacity-10 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
               
               <h4 className="text-2xl font-bold text-foreground mb-6">Get Your Free Consultation</h4>
               
@@ -214,7 +159,7 @@ export default function ServicesCTA() {
                       type="text"
                       className="w-full px-4 py-3 rounded-xl bg-card border border-border/50 text-foreground placeholder-foreground/50 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
                       placeholder="John"
-                      required
+                      
                     />
                   </div>
                   <div>

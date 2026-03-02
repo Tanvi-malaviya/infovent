@@ -145,7 +145,7 @@ export default function TechnologyStack() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Cutting-Edge</span> Technologies
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              We leverage the latest and most powerful technologies to build scalable, secure, and high-performance solutions
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
           </motion.div>
 
@@ -286,17 +286,17 @@ export default function TechnologyStack() {
                   {
                     title: "Continuous Learning",
                     description:
-                      "Our team stays updated with the latest technologies and best practices through regular training and certifications",
+                      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
                   },
                   {
                     title: "Research & Development",
                     description:
-                      "We invest in R&D to explore emerging technologies and create innovative solutions for our clients",
+                      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
                   },
                   {
                     title: "Community Engagement",
                     description:
-                      "Active participation in developer communities and open-source projects keeps us connected to industry trends",
+                      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
                   },
                 ].map((item, index) => {
                   const Icon = innovationIcons[index];

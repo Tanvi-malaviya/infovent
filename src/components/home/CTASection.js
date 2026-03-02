@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Button from '@/src/common/Button';
+import Link from 'next/link';
 
 export default function CTASection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -107,33 +109,42 @@ export default function CTASection() {
         variants={itemVariants}
         className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto"
       >
-        Join hundreds of satisfied clients who have transformed their operations
-        with our cutting-edge technology solutions.
+       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
       </motion.p>
 
       {/* CTA Buttons */}
-      <motion.div
-        variants={itemVariants}
-        className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
-      >
-        <motion.button
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
-          className="px-8 py-4 bg-primary text-white rounded-lg font-bold text-lg shadow-lg hover:shadow-xl transition-all"
-        >
-          Start Your Project
-        </motion.button>
+  <motion.div
+  variants={itemVariants}
+  className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
+>
+  
+  {/* PRIMARY CTA */}
+  <Link href={"/contact"}>
+  <motion.div
+    variants={buttonVariants}
+    whileHover="hover"
+    whileTap="tap"
+  >
+    <Button variant="primary" className="px-8 py-4 text-lg">
+      Start Your Project
+    </Button>
+  </motion.div>
+  </Link>
 
-        <motion.button
-          variants={buttonVariants}
-          whileHover="hover"
-          whileTap="tap"
-          className="px-8 py-4 border-2 border-primary text-primary rounded-lg font-bold text-lg hover:bg-primary hover:text-white transition-all"
-        >
-          Schedule a Call
-        </motion.button>
-      </motion.div>
+  {/* OUTLINE BUTTON */}
+    <a href="tel:+919876543210">
+  <motion.div
+    variants={buttonVariants}
+    whileHover="hover"
+    whileTap="tap"
+  >
+    <Button variant="outlineLight" className="px-8 py-4 text-lg !border-primary !text-primary hover:!bg-primary hover:!text-white">
+      Schedule a Call
+    </Button>
+  </motion.div>
+  </a>
+
+</motion.div>
 
       {/* Email Card */}
       <motion.div variants={itemVariants} className="max-w-2xl mx-auto">
@@ -142,7 +153,7 @@ export default function CTASection() {
             Stay Updated
           </h3>
           <p className="text-muted-foreground mb-6">
-            Subscribe to our newsletter for the latest tech insights and industry trends.
+           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
 
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">

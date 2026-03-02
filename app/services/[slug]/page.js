@@ -1,4 +1,6 @@
 "use client";
+
+import { use } from "react"; // Import the 'use' hook
 import { notFound } from "next/navigation";
 import {
   CheckCircle,
@@ -9,15 +11,16 @@ import {
   BarChart,
 } from "lucide-react";
 import { motion } from "framer-motion";
-
+import Button from "@/src/common/Button";
+import Link from "next/link";
 
 const services = {
   "web-development": {
     title: "Web Development",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -26,12 +29,12 @@ const services = {
     ],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
-    "mobile-applications": {
+  "mobile-applications": {
     title: "Mobile-Applications",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -40,12 +43,12 @@ const services = {
     ],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
-    "cloud-solutions": {
+  "cloud-solutions": {
     title: "Cloud-Solutions",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -54,12 +57,12 @@ const services = {
     ],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
-    "ai-machine-learning": {
+  "ai-machine-learning": {
     title: "Ai-Machine-Learning",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -68,12 +71,12 @@ const services = {
     ],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
-    "cybersecurity": {
+  "cybersecurity": {
     title: "Cybersecurity",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -82,12 +85,12 @@ const services = {
     ],
     tech: ["React", "Next.js", "Node.js", "MongoDB", "AWS"],
   },
-     "it-consulting": { 
+  "it-consulting": { 
     title: "It Consulting",
     description:
-      "We build high-performance, scalable web applications tailored for modern businesses.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. ",
     content:
-      "From enterprise platforms to startup MVPs, we engineer fast, secure and scalable digital experiences using modern frameworks like React, Next.js and Node.js. Our focus is performance, SEO, accessibility and clean architecture.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. ",
     features: [
       "Responsive UI/UX",
       "SEO Optimized",
@@ -98,90 +101,90 @@ const services = {
   },
 };
 
-export default async function ServicePage({ params }) {
-  const { slug } = await params;
+// Removed 'async' keyword here
+export default function ServicePage({ params }) {
+  // Use React.use() to unwrap the params promise in a Client Component
+  const resolvedParams = use(params);
+  const slug = resolvedParams.slug;
   const service = services[slug];
 
   if (!service) return notFound();
 
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-hidden ">
 
       {/* HERO */}
-      {/* ================= HERO ================= */}
-     <section className="relative overflow-hidden py-16 sm:py-20 lg:py-28 px-4 sm:px-6">
+      <section className="relative overflow-hidden pt-20 pb-8 sm:pt-20 sm:pb-10 lg:pt-28 lg:pb-12 px-4 sm:px-6">
 
-  {/* Grid Background */}
-  <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000008_1px,transparent_1px),linear-gradient(to_bottom,#00000008_1px,transparent_1px)] bg-[size:40px_40px]"></div>
 
-  <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-    {/* LEFT SIDE */}
-    <motion.div
-      initial={{ opacity: 0, x: -40 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="text-center lg:text-left"
-    >
-      <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-muted text-xs sm:text-sm font-medium">
-        <Rocket size={14} className="text-primary" />
-        Enterprise Digital Solutions
-      </div>
+          {/* LEFT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-center lg:text-left"
+          >
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full border border-border bg-muted text-xs sm:text-sm font-medium">
+              <Rocket size={14} className="text-primary" />
+              Enterprise Digital Solutions
+            </div>
 
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
-        {service.title}
-        <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          That Drives Growth
-        </span>
-      </h1>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6">
+              {service.title}
+              <span className="block mt-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                That Drives Growth
+              </span>
+            </h1>
 
-      <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-8 max-w-xl mx-auto lg:mx-0">
-        {service.description}
-      </p>
-    </motion.div>
+            <p className="text-sm sm:text-base md:text-lg text-foreground/70 mb-0 max-w-xl mx-auto lg:mx-0">
+              {service.description}
+            </p>
+          </motion.div>
 
-    {/* RIGHT SIDE */}
-    <motion.div
-      initial={{ opacity: 0, x: 40 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.8 }}
-      className="relative flex justify-center"
-    >
-      <div className="relative w-full max-w-sm sm:max-w-md">
+          {/* RIGHT SIDE */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="relative flex justify-center"
+          >
+            <div className="relative w-full max-w-sm sm:max-w-md">
 
-        <div className="bg-card border border-border rounded-3xl p-6 sm:p-8">
-          <h3 className="text-base sm:text-lg font-bold mb-4">
-            Core Highlights
-          </h3>
-          <ul className="space-y-3 text-sm sm:text-base text-foreground/70">
-            <li>✔ Scalable Architecture</li>
-            <li>✔ Modern Tech Stack</li>
-            <li>✔ Secure Infrastructure</li>
-            <li>✔ High Performance</li>
-          </ul>
+              <div className="bg-card border border-border rounded-3xl p-6 sm:p-8">
+                <h3 className="text-base sm:text-lg font-bold mb-4">
+                  Core Highlights
+                </h3>
+                <ul className="space-y-3 text-sm sm:text-base text-foreground/70">
+                  <li>✔ Scalable Architecture</li>
+                  <li>✔ Modern Tech Stack</li>
+                  <li>✔ Secure Infrastructure</li>
+                  <li>✔ High Performance</li>
+                </ul>
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+                className="hidden xl:block absolute -bottom-6 -right-6 bg-background border border-border rounded-2xl p-5"
+              >
+                <h4 className="text-xl font-black text-primary">150+</h4>
+                <p className="text-xs text-foreground/60">
+                  Projects Delivered
+                </p>
+              </motion.div>
+
+            </div>
+          </motion.div>
+
         </div>
-
-        {/* Floating card only on XL screens */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="hidden xl:block absolute -bottom-6 -right-6 bg-background border border-border rounded-2xl p-5"
-        >
-          <h4 className="text-xl font-black text-primary">150+</h4>
-          <p className="text-xs text-foreground/60">
-            Projects Delivered
-          </p>
-        </motion.div>
-
-      </div>
-    </motion.div>
-
-  </div>
-</section>
+      </section>
 
       {/* OVERVIEW */}
-      <section className="py-20 px-6">
+      <section className="py-15 px-6">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           
           <motion.div
@@ -205,7 +208,6 @@ export default async function ServicePage({ params }) {
             </ul>
           </motion.div>
 
-          {/* Stats Card */}
           <motion.div
             initial={{ opacity: 0, x: 60 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -235,7 +237,7 @@ export default async function ServicePage({ params }) {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-20 px-6 bg-secondary/30">
+      <section className="py-10 px-6  ">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-16">
             Why Choose Us
@@ -256,7 +258,7 @@ export default async function ServicePage({ params }) {
                   {["Secure", "Fast Delivery", "Modern Stack", "Scalable"][i]}
                 </h3>
                 <p className="text-sm text-foreground/60">
-                  Enterprise-grade implementation with high performance standards.
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                 </p>
               </motion.div>
             ))}
@@ -265,7 +267,7 @@ export default async function ServicePage({ params }) {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-20 px-6">
+      <section className="py-10 px-6">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-12">Technology Stack</h2>
 
@@ -284,86 +286,74 @@ export default async function ServicePage({ params }) {
       </section>
 
       {/* CTA */}
-    <section className="relative py-28 px-6">
+      <section className="relative py-14 px-6">
 
-  <motion.div
-    initial={{ opacity: 0, y: 60 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8 }}
-    viewport={{ once: true }}
-    className="max-w-6xl mx-auto"
-  >
+        <motion.div
+          initial={{ opacity: 0, y: 60 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto"
+        >
 
-    {/* Main Container */}
-    <div className="relative rounded-3xl border border-border bg-card overflow-hidden shadow-2xl">
+          <div className="relative rounded-3xl border border-border bg-card overflow-hidden shadow-2xl">
 
-      {/* Subtle Glow Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
 
-      <div className="relative grid md:grid-cols-2 items-center">
+            <div className="relative grid md:grid-cols-2 items-center">
 
-        {/* LEFT CONTENT */}
-        <div className="p-12 md:p-16">
-          <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6">
-            Ready to Scale Your
-            <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Digital Presence?
-            </span>
-          </h2>
+              <div className="p-12 md:p-16">
+                <h2 className="text-3xl md:text-5xl font-black leading-tight mb-6">
+                  Ready to Scale Your
+                  <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                    Digital Presence?
+                  </span>
+                </h2>
 
-          <p className="text-foreground/70 text-lg mb-10">
-            We craft powerful, scalable and secure digital solutions 
-            tailored to your business growth.
-          </p>
+                <p className="text-foreground/70 text-lg mb-10">
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
 
-          <div className="flex flex-wrap gap-6">
-            <motion.button
-              whileHover={{ y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 bg-primary text-white rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-2"
-            >
-              Start Your Project
-              <ArrowRight size={18} />
-            </motion.button>
+             <div className="flex flex-wrap gap-6">
 
-            <motion.button
-              whileHover={{ y: -4 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-10 py-4 border border-border rounded-full font-semibold hover:bg-muted transition-all duration-300"
-            >
-              Book a Consultation
-            </motion.button>
+          <Link href={"/contact"}>
+          <Button variant="primary" className="rounded-full px-10 py-4 text-lg">
+            Start Your Project
+          </Button>
+          </Link>
+
+       
+
+</div>
+              </div>
+
+              <div className="relative h-full bg-muted/40 flex items-center justify-center p-12">
+
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 200 }}
+                  className="bg-background border border-border rounded-2xl p-8 shadow-xl w-full max-w-sm"
+                >
+                  <h3 className="text-xl font-bold mb-4">
+                    Why Work With Us?
+                  </h3>
+
+                  <ul className="space-y-3 text-foreground/70">
+                    <li>✔ Enterprise Grade Security</li>
+                    <li>✔ Modern Tech Stack</li>
+                    <li>✔ 24/7 Support</li>
+                    <li>✔ Scalable Architecture</li>
+                  </ul>
+                </motion.div>
+
+              </div>
+
+            </div>
           </div>
-        </div>
 
-        {/* RIGHT VISUAL CARD */}
-        <div className="relative h-full bg-muted/40 flex items-center justify-center p-12">
+        </motion.div>
 
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="bg-background border border-border rounded-2xl p-8 shadow-xl w-full max-w-sm"
-          >
-            <h3 className="text-xl font-bold mb-4">
-              Why Work With Us?
-            </h3>
-
-            <ul className="space-y-3 text-foreground/70">
-              <li>✔ Enterprise Grade Security</li>
-              <li>✔ Modern Tech Stack</li>
-              <li>✔ 24/7 Support</li>
-              <li>✔ Scalable Architecture</li>
-            </ul>
-          </motion.div>
-
-        </div>
-
-      </div>
-    </div>
-
-  </motion.div>
-
-</section>
+      </section>
     </div>
   );
 }

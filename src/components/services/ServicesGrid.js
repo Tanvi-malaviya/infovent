@@ -60,7 +60,7 @@ export default function ServicesGrid() {
       slug: 'web-development',
       title: 'Web Development',
       description:
-        'Custom websites and web apps using React, Next.js & Node.js. Fast, scalable & SEO-ready.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. ',
       icon: WebDevIcon,
       features: ['Responsive Design', 'Fast Loading', 'SEO Optimized', 'Cross Browser'],
       color: 'from-blue-500 to-cyan-500',
@@ -71,7 +71,7 @@ export default function ServicesGrid() {
       slug: 'mobile-applications',
       title: 'Mobile Applications',
       description:
-        'Native & cross-platform apps with smooth UI/UX, store deployment & long-term support.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
       icon: MobileIcon,
       features: ['iOS & Android', 'UI/UX Design', 'App Store Launch', 'Maintenance'],
       color: 'from-green-500 to-emerald-500',
@@ -82,7 +82,7 @@ export default function ServicesGrid() {
       slug: 'cloud-solutions',
       title: 'Cloud Solutions',
       description:
-        'Secure & scalable cloud solutions on AWS, Azure & GCP with DevOps best practices.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
       icon: CloudIcon,
       features: ['Cloud Migration', 'Infrastructure', 'DevOps', 'Security'],
       color: 'from-purple-500 to-pink-500',
@@ -93,7 +93,7 @@ export default function ServicesGrid() {
       slug: 'ai-machine-learning',
       title: 'AI & Machine Learning',
       description:
-        'Smart automation, analytics, NLP & computer vision solutions tailored to your needs.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
       icon: AIIcon,
       features: ['Predictive AI', 'NLP', 'Vision AI', 'Automation'],
       color: 'from-orange-500 to-red-500',
@@ -104,7 +104,7 @@ export default function ServicesGrid() {
       slug: 'cybersecurity',
       title: 'Cybersecurity',
       description:
-        'Enterprise-grade protection with audits, monitoring & compliance solutions.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
       icon: SecurityIcon,
       features: ['Security Audit', 'Threat Detection', 'Data Protection', 'Compliance'],
       color: 'from-red-500 to-pink-500',
@@ -115,7 +115,7 @@ export default function ServicesGrid() {
       slug: 'it-consulting',
       title: 'IT Consulting',
       description:
-        'Technology strategy, audits & digital transformation roadmaps.',
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.',
       icon: ConsultingIcon,
       features: ['Strategy', 'Transformation', 'Audit', 'Roadmap'],
       color: 'from-indigo-500 to-purple-500',

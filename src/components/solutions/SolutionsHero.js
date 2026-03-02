@@ -156,24 +156,7 @@ export default function SolutionsHero() {
           ))}
         </div>
 
-        {/* Buttons with theme support */}
-        <div className="mt-12 flex flex-col sm:flex-row gap-6 justify-center">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`px-8 py-4 ${primaryButtonColors} text-white rounded-xl font-bold shadow-lg transition-all duration-300`}
-          >
-            Explore Solutions <ArrowRight className="inline ml-2" />
-          </motion.button>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`px-8 py-4 ${secondaryButtonColors} rounded-xl font-bold shadow-sm hover:shadow-md transition-all duration-300`}
-          >
-            Schedule Consultation
-          </motion.button>
-        </div>
+    
 
       </div>
     </section>
