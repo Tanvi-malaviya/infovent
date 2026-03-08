@@ -57,7 +57,7 @@ export default function AboutCTA() {
     {
       icon: IdeaIcon,
       title: "Share Your Vision",
-      description: "Tell us about your business goals and digital transformation needs. We listen carefully to understand your unique requirements.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-500/10",
       borderColor: "border-blue-500"
@@ -65,7 +65,7 @@ export default function AboutCTA() {
     {
       icon: StrategyIcon,
       title: "Strategic Planning",
-      description: "Our experts create a customized roadmap with clear milestones, timelines, and success metrics tailored to your business objectives.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-500/10",
       borderColor: "border-purple-500"
@@ -73,7 +73,7 @@ export default function AboutCTA() {
     {
       icon: DevelopmentIcon,
       title: "Expert Development",
-      description: "Our skilled team builds secure, scalable solutions using cutting-edge technologies and best practices for optimal performance.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-500/10",
       borderColor: "border-green-500"
@@ -81,7 +81,7 @@ export default function AboutCTA() {
     {
       icon: LaunchIcon,
       title: "Launch & Scale",
-      description: "We deploy your solution with comprehensive testing, provide training, and support your growth with ongoing optimization.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       color: "from-orange-500 to-red-500",
       bgColor: "bg-orange-500/10",
       borderColor: "border-orange-500"
@@ -188,7 +188,7 @@ export default function AboutCTA() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-500"> Success</span>
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              Our proven 4-step methodology ensures your digital transformation journey is smooth, strategic, and successful
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
           </motion.div>
 
@@ -251,7 +251,7 @@ export default function AboutCTA() {
                 Ready to Transform Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Business</span>?
               </h3>
               <p className="text-lg text-foreground/80 mb-8">
-                Join hundreds of successful businesses that have partnered with us to achieve their digital transformation goals. Let's discuss how we can help you succeed.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
               </p>
               
               <div className="space-y-4">

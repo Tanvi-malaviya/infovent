@@ -185,7 +185,7 @@ export default function AchievementStats() {
                 ))}
               </div>
               <p className="text-sm text-foreground/70">
-                “Outstanding service and amazing support.”
+                “Lorem ipsum dolor sit amet.”
               </p>
               <p className="font-semibold mt-3">Client Review</p>
             </motion.div>

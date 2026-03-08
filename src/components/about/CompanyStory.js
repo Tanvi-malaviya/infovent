@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Custom SVG Icons for milestones
 const RocketIcon = ({ size = 24, className = "" }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" className={className}>
     <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
@@ -49,7 +48,7 @@ export default function CompanyStory() {
     {
       year: "2014",
       title: "The Beginning",
-      description: "Founded with a vision to revolutionize how businesses approach technology solutions. Started with just 3 passionate developers in a small office.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: RocketIcon,
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-500/10",
@@ -58,7 +57,7 @@ export default function CompanyStory() {
     {
       year: "2016",
       title: "First Major Breakthrough",
-      description: "Secured our first enterprise client and delivered a groundbreaking mobile application that transformed their customer engagement strategy.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: TrophyIcon,
       color: "from-yellow-500 to-orange-500",
       bgColor: "bg-yellow-500/10",
@@ -67,7 +66,7 @@ export default function CompanyStory() {
     {
       year: "2018",
       title: "Team Expansion",
-      description: "Grew to 15 talented professionals and established our reputation for quality and innovation in the IT solutions market.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: UsersIcon,
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-500/10",
@@ -76,7 +75,7 @@ export default function CompanyStory() {
     {
       year: "2020",
       title: "Digital Transformation Era",
-      description: "Pivoted to focus on digital transformation services, helping businesses navigate the challenges of remote work and digital-first strategies.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: CloudIcon,
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-500/10",
@@ -85,7 +84,7 @@ export default function CompanyStory() {
     {
       year: "2022",
       title: "AI & Innovation Hub",
-      description: "Launched our AI research division and became a recognized leader in artificial intelligence and machine learning solutions.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: BrainIcon,
       color: "from-red-500 to-pink-500",
       bgColor: "bg-red-500/10",
@@ -94,7 +93,7 @@ export default function CompanyStory() {
     {
       year: "2024",
       title: "Global Recognition",
-      description: "Expanded internationally with clients across 15+ countries and received multiple industry awards for innovation and excellence.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.",
       icon: GlobeIcon,
       color: "from-indigo-500 to-purple-500",
       bgColor: "bg-indigo-500/10",
@@ -278,9 +277,8 @@ export default function CompanyStory() {
                   Today & Tomorrow
                 </h3>
                 <p className="text-lg text-foreground/80 max-w-3xl mx-auto mb-8">
-                  We continue to push boundaries, embrace emerging technologies, and build solutions 
-                  that shape the future of business innovation. Our commitment to excellence remains 
-                  unwavering as we look toward the next decade of growth.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor Aenean massa.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
                   {['Innovation', 'Excellence', 'Integrity', 'Growth'].map((value, index) => (

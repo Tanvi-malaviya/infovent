@@ -15,7 +15,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "10+ years",
       expertise: ["Leadership", "Strategy", "Innovation"],
-      bio: "Visionary leader with a passion for transforming businesses through technology. Sarah founded Infovent with the mission to make cutting-edge technology accessible to businesses of all sizes.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", twitter: "#" }
     },
     {
@@ -24,7 +24,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "8+ years",
       expertise: ["AI/ML", "Cloud Architecture", "DevOps"],
-      bio: "Technology visionary specializing in artificial intelligence and cloud solutions. Michael leads our technical innovation and ensures we stay at the forefront of emerging technologies.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", github: "#" }
     },
     {
@@ -33,7 +33,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "7+ years",
       expertise: ["UX/UI Design", "User Research", "Brand Identity"],
-      bio: "Creative director focused on creating beautiful, functional user experiences. Emily ensures every product we build is intuitive, accessible, and visually stunning.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", dribbble: "#" }
     },
     {
@@ -42,7 +42,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "9+ years",
       expertise: ["Full-Stack Development", "Mobile Apps", "System Architecture"],
-      bio: "Full-stack development expert with a passion for clean code and robust architecture. David leads our development team in building scalable, maintainable solutions.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", github: "#" }
     },
     {
@@ -51,7 +51,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "6+ years",
       expertise: ["Agile Methodology", "Client Relations", "Project Delivery"],
-      bio: "Client-focused project manager who ensures seamless delivery and exceptional communication. Lisa bridges the gap between technical teams and business stakeholders.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", twitter: "#" }
     },
     {
@@ -60,7 +60,7 @@ export default function TeamShowcase() {
       image: "/placeholder-avatar.jpg",
       experience: "12+ years",
       expertise: ["Cybersecurity", "Compliance", "Risk Management"],
-      bio: "Security expert dedicated to protecting our clients' digital assets. James ensures all our solutions meet the highest security standards and compliance requirements.",
+      bio: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       social: { linkedin: "#", twitter: "#" }
     }
   ];
@@ -114,7 +114,7 @@ export default function TeamShowcase() {
               The <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">People</span> Behind Infovent
             </h2>
             <p className="text-xl text-foreground/80 max-w-3xl mx-auto">
-              Our diverse team of experts brings together decades of experience across technology, design, and business strategy.
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
           </motion.div>
 
@@ -232,17 +232,17 @@ export default function TeamShowcase() {
   {[
     {
       title: "Collaborative Culture",
-      description: "We believe in the power of teamwork and open communication to drive innovation.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Handshake
     },
     {
       title: "Continuous Learning",
-      description: "Our team stays ahead of industry trends through constant learning and skill development.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: BookOpen
     },
     {
       title: "Client First",
-      description: "Every decision we make is guided by our commitment to client success and satisfaction.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Target
     }
   ].map((culture, index) => {

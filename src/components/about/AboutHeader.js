@@ -125,8 +125,7 @@ export default function AboutHeader() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-foreground/80 mb-10 max-w-3xl mx-auto leading-relaxed"
           >
-            Since our founding, we've been committed to delivering cutting-edge technology solutions 
-            that transform businesses and drive innovation across industries.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
           </motion.p>
 
           {/* Stats preview */}

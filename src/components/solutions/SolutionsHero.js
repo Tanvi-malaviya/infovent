@@ -131,8 +131,7 @@ export default function SolutionsHero() {
           transition={{ delay: 0.5 }}
           className={`mt-6 text-lg md:text-xl ${subTextColor} max-w-3xl mx-auto`}
         >
-          Innovative technology solutions designed to accelerate growth,
-          improve efficiency, and future-proof your business.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         </motion.p>
 
         {/* Stats with theme support */}

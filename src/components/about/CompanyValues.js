@@ -60,7 +60,7 @@ export default function CompanyValues() {
   const values = [
     {
       title: "Innovation",
-      description: "We constantly push boundaries and embrace emerging technologies to create solutions that shape the future. Innovation isn't just what we do - it's who we are.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: InnovationIcon,
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-500/10",
@@ -74,7 +74,7 @@ export default function CompanyValues() {
     },
     {
       title: "Excellence",
-      description: "We hold ourselves to the highest standards in everything we do, from code quality to client communication. Excellence is our minimum requirement, not our maximum goal.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: ExcellenceIcon,
       color: "from-yellow-500 to-orange-500",
       bgColor: "bg-yellow-500/10",
@@ -88,7 +88,7 @@ export default function CompanyValues() {
     },
     {
       title: "Integrity",
-      description: "We build trust through transparent communication, ethical practices, and honest relationships with our clients, partners, and team members.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: IntegrityIcon,
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-500/10",
@@ -102,7 +102,7 @@ export default function CompanyValues() {
     },
     {
       title: "Collaboration",
-      description: "We believe the best solutions emerge when diverse perspectives work together. Our collaborative approach ensures we leverage collective expertise.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: CollaborationIcon,
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-500/10",
@@ -116,7 +116,7 @@ export default function CompanyValues() {
     },
     {
       title: "Growth",
-      description: "We're committed to continuous improvement - for our clients' businesses, our team members, and our own capabilities. Growth is a journey, not a destination.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: GrowthIcon,
       color: "from-red-500 to-pink-500",
       bgColor: "bg-red-500/10",
@@ -130,7 +130,7 @@ export default function CompanyValues() {
     },
     {
       title: "Impact",
-      description: "We measure success by the positive change we create in businesses and communities. Every solution we build should make a meaningful difference.",
+      description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: ImpactIcon,
       color: "from-indigo-500 to-purple-500",
       bgColor: "bg-indigo-500/10",
@@ -229,7 +229,7 @@ export default function CompanyValues() {
               What <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Defines</span> Us
             </h2>
             <p className="text-xl md:text-2xl text-foreground/80 max-w-4xl mx-auto leading-relaxed">
-              The fundamental principles that guide every decision, innovation, and relationship we build
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
           </motion.div>
 
@@ -304,7 +304,7 @@ export default function CompanyValues() {
           {/* Premium mission & vision section */}
           <motion.div 
             variants={itemVariants} 
-            className="grid md:grid-cols-2 gap-10 mb-20"
+            className="grid md:grid-cols-2 gap-10 "
           >
             {/* Mission */}
             <motion.div
@@ -319,8 +319,7 @@ export default function CompanyValues() {
                 <MissionIcon size={48} className="mb-6 text-primary" />
                 <h3 className="text-3xl font-bold text-foreground mb-6">Our Mission</h3>
                 <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                  To empower businesses with transformative technology solutions that drive innovation, 
-                  efficiency, and sustainable growth through expert guidance and cutting-edge implementation.
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   {['Innovation', 'Excellence', 'Client Success'].map((tag, index) => (
@@ -348,8 +347,7 @@ export default function CompanyValues() {
                 <VisionIcon size={48} className="mb-6 text-green-600" />
                 <h3 className="text-3xl font-bold text-foreground mb-6">Our Vision</h3>
                 <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                  To be the global leader in technology innovation, recognized for our commitment 
-                  to excellence, ethical practices, and transformative impact across industries worldwide.
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <span className="px-4 py-2 bg-green-500/10 text-green-600 rounded-full text-sm font-medium backdrop-blur-sm">
