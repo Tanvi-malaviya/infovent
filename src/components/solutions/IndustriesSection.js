@@ -141,8 +141,7 @@ export default function IndustriesSection() {
           </h2>
 
           <p className="text-base md:text-lg text-foreground/70 mb-8 md:mb-12 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-            We deliver cutting-edge digital solutions that empower organizations
-            to innovate, automate workflows, and scale operations globally.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
 
           {/* Premium Stats - Adjusted grid for mobile */}

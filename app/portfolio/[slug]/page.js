@@ -9,28 +9,28 @@ const projects = {
     category: "Web Application",
     image: "/portfolio1.jpg",
     description:
-      "A modern healthcare system enabling appointment booking, patient records, and real-time doctor communication.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   "ecommerce-system": {
     title: "E-Commerce System",
     category: "Ecommerce",
     image: "/portfolio2.jpg",
     description:
-      "Full-scale ecommerce platform with AI product recommendations and seamless checkout experience.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   "fintech-dashboard": {
     title: "Fintech Dashboard",
     category: "Dashboard",
     image: "/portfolio3.jpg",
     description:
-      "Advanced analytics dashboard with real-time data visualization for financial institutions.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   "education-lms": {
     title: "Education LMS",
     category: "SaaS",
     image: "/portfolio4.jpg",
     description:
-      "Complete learning management system with live classes, quizzes, and progress tracking.",
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
 };
 

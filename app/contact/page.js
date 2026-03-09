@@ -54,8 +54,7 @@ export default function ContactPage() {
             </h1>
             
             <p className="mt-8 text-xl text-foreground/60 max-w-md border-l-4 border-primary pl-6 leading-relaxed">
-              Engineering high-integrity systems. If your project demands 
-              absolute security and radical performance, we should talk.
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
             </p>
           </motion.div>
 
@@ -113,7 +112,7 @@ export default function ContactPage() {
                 <ShieldCheck size={40} className="text-primary mb-4" />
                 <h4 className="font-bold text-xl mb-2 italic">Data Sovereignty</h4>
                 <p className="text-sm text-foreground/60 leading-relaxed">
-                  Badhu data local servers par process thay che. Ame tamari privacy ane security ne prioritze kariye chiye.
+                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
                 </p>
             </div>
           </div>

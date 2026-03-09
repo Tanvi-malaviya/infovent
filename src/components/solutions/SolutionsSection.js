@@ -7,32 +7,32 @@ export default function SolutionsSection() {
   const solutions = [
     {
       title: "Web Development",
-      desc: "Scalable, modern web applications built with cutting-edge technologies.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Code,
     },
     {
       title: "Cloud Solutions",
-      desc: "Secure and high-performance cloud infrastructure for growing businesses.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Cloud,
     },
     {
       title: "Cyber Security",
-      desc: "Enterprise-level protection to safeguard your digital assets.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Shield,
     },
     {
       title: "AI Automation",
-      desc: "Smart AI solutions that improve efficiency and productivity.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Cpu,
     },
     {
       title: "Database Systems",
-      desc: "Robust and optimized data management architectures.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Database,
     },
     {
       title: "Mobile Apps",
-      desc: "User-friendly, high-performance mobile applications.",
+      desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
       icon: Smartphone,
     },
   ];
@@ -65,8 +65,7 @@ export default function SolutionsSection() {
             Our Smart IT Solutions
           </h2>
           <p className="mt-6 text-lg text-foreground/70 max-w-2xl mx-auto">
-            Innovative technology services designed to solve complex business
-            challenges and accelerate digital transformation.
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
         </motion.div>
 

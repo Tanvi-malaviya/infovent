@@ -1,10 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/src/components/ThemeProvider";
-import { HomeSEO } from "@/src/components/SEOHead";
 import Navbar from "@/src/components/Navbar";
-import Footer from "@/src/components/home/Footer";
-
+import Footer from "@/src/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,7 +16,14 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Infovent - Professional IT Services & Solutions",
-  description: "Leading IT company providing software development, web design, digital marketing, and technology solutions for businesses worldwide.",
+  description:
+    "Leading IT company providing software development, web design, digital marketing, and technology solutions for businesses worldwide",
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -28,9 +33,9 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThemeProvider>
-            <Navbar />
+          <Navbar />
           {children}
-            <Footer />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

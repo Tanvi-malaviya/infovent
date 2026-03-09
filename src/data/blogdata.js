@@ -3,10 +3,9 @@ export const POSTS = [
     id: 1,
     title: "The Rise of Quantum Computing in Enterprise Security",
     content: `
-      Quantum computing is reshaping enterprise security...
-      Full blog content here...
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
     `,
-    excerpt: "Exploring how quantum-resistant algorithms are becoming the new standard for data protection in 2026.",
+    excerpt: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     category: "Cybersecurity",
     author: "Alex Rivera",
     date: "Oct 24",
@@ -17,10 +16,9 @@ export const POSTS = [
     id: 2,
     title: "Auto-Scaling Architectures with Kubernetes",
      content: `
-      Quantum computing is reshaping enterprise security...
-      Full blog content here...
+     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
     `,
-    excerpt: "A deep dive into optimizing resource allocation for high-traffic SaaS applications.",
+    excerpt: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     category: "DevOps",
     author: "Sarah Chen",
     date: "Oct 21",
@@ -31,10 +29,9 @@ export const POSTS = [
     id: 3,
     title: "Edge Computing: Processing at the Speed of Light",
      content: `
-      Quantum computing is reshaping enterprise security...
-      Full blog content here...
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
     `,
-    excerpt: "Why moving logic closer to the user is the final frontier for sub-10ms latency.",
+    excerpt: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     category: "Cloud",
     author: "Jordan Smith",
     date: "Oct 18",
@@ -45,10 +42,9 @@ export const POSTS = [
     id: 4,
     title: "LLMs in the SDLC: Assistant or Architect?",
      content: `
-      Quantum computing is reshaping enterprise security...
-      Full blog content here...
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
     `,
-    excerpt: "Analyzing the impact of generative AI on senior engineering workflows and code quality.",
+    excerpt: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     category: "AI & Data",
     author: "Alex Rivera",
     date: "Oct 15",

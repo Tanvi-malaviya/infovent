@@ -15,32 +15,32 @@ const SOLUTIONS = [
   {
     title: "Web Development",
     icon: Code2,
-    desc: "We build fast, scalable web applications designed for performance, SEO, and long-term business growth.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   {
     title: "Mobile Applications",
     icon: Smartphone,
-    desc: "High-quality cross-platform apps with seamless UX and enterprise-grade security.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   {
     title: "Cloud Infrastructure",
     icon: Cloud,
-    desc: "Secure, scalable cloud architecture with optimized deployment pipelines.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   {
     title: "Cyber Security",
     icon: ShieldCheck,
-    desc: "Advanced security systems to protect data, infrastructure, and user privacy.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   {
     title: "AI Automation",
     icon: Cpu,
-    desc: "Smart AI solutions to automate operations and improve business efficiency.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
   {
     title: "Digital Transformation",
     icon: Rocket,
-    desc: "Complete digital modernization strategies to future-proof your business.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
   },
 ];
 

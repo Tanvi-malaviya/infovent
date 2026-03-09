@@ -35,7 +35,7 @@ export default function FinalCTA() {
           </h2>
 
           <p className="text-base md:text-xl text-foreground/70 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-            Partner with us to build innovative digital solutions that drive growth and future-proof your operations.
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
 
           <Link  href={"/contact"}>

@@ -43,7 +43,7 @@ export default function UltraPortfolio() {
       : projects.filter((p) => p.category === active);
 
   return (
-    <section className="relative py-32 bg-background overflow-hidden">
+    <section className="relative py-16 bg-background overflow-hidden">
 
       {/* Animated Background Orbs */}
       <div className="absolute inset-0 pointer-events-none">
@@ -71,12 +71,12 @@ export default function UltraPortfolio() {
             Our <span className="text-primary">Work</span>
           </h2>
           <p className="text-lg text-foreground/70">
-            Premium digital experiences crafted with innovation.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
         </motion.div>
 
         {/* FILTER TABS */}
-        <div className="flex justify-center gap-4 mb-20 flex-wrap">
+        <div className="flex justify-center gap-4 mb-10 flex-wrap">
           {categories.map((cat) => (
             <button
               key={cat}

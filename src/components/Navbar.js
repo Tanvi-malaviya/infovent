@@ -3,10 +3,12 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   // Scroll effect
   useEffect(() => {
@@ -68,10 +70,17 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="relative px-3 xl:px-4 py-2 rounded-lg text-sm xl:text-base text-foreground hover:text-primary hover:bg-secondary transition-all duration-200 font-medium group"
+                className={`relative px-3 xl:px-4 py-2 rounded-lg text-sm xl:text-base transition-all duration-200 font-medium group
+                ${
+                  pathname === link.href
+                    ? 'text-primary bg-secondary'
+                    : 'text-foreground hover:text-primary hover:bg-secondary'
+                }`}
               >
                 {link.name}
-                <span className="absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2 group-hover:left-1/4"></span>
+                <span className={`absolute bottom-1 left-1/2 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-1/2 group-hover:left-1/4 ${
+                  pathname === link.href ? 'w-1/2 left-1/4' : ''
+                }`}></span>
               </Link>
             ))}
           </div>
@@ -123,7 +132,12 @@ export default function Navbar() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMenuOpen(false)}
-              className="block px-4 py-3 rounded-lg text-sm sm:text-base text-foreground hover:text-primary hover:bg-secondary transition-colors font-medium"
+              className={`block px-4 py-3 rounded-lg text-sm sm:text-base transition-colors font-medium
+              ${
+                pathname === link.href
+                  ? 'text-primary bg-secondary'
+                  : 'text-foreground hover:text-primary hover:bg-secondary'
+              }`}
             >
               {link.name}
             </Link>

@@ -102,10 +102,7 @@ export default function BlogDetails({ params }) {
           viewport={{once: true}}
           className="text-xl leading-relaxed text-foreground/80 first-letter:text-6xl first-letter:font-black first-letter:text-primary first-letter:mr-3 first-letter:float-left"
         >
-          In today’s evolving digital landscape, enterprise security is no
-          longer just about firewalls and compliance. It’s about resilience,
-          anticipation, and proactive architecture that adapts to constant
-          transformation.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
         </motion.p>
 
         {/* MAIN CONTENT */}
@@ -125,9 +122,7 @@ export default function BlogDetails({ params }) {
           </h2>
 
           <p>
-            Organizations that invest early in quantum-resistant encryption,
-            zero-trust frameworks, and AI-driven anomaly detection will define
-            the next technological frontier.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
 
           {/* Highlight Quote */}
@@ -137,9 +132,7 @@ export default function BlogDetails({ params }) {
           </blockquote>
 
           <p>
-            As enterprise ecosystems expand across cloud, edge, and hybrid
-            infrastructures, traditional perimeter-based protection models
-            collapse under scale. Adaptive intelligence becomes critical.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
         </motion.div>
 
@@ -157,8 +150,7 @@ export default function BlogDetails({ params }) {
             Ready to Build Future-Proof Security?
           </h3>
           <p className="opacity-90 mb-10">
-            Let’s architect resilient systems designed for tomorrow’s
-            challenges.
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
           <button className="px-10 py-4 bg-white text-primary font-bold rounded-xl hover:scale-105 transition-transform">
             Schedule Consultation

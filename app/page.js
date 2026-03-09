@@ -10,7 +10,7 @@ import ServicesSection from "@/src/components/home/ServicesSection";
 import TestimonialsSection from "@/src/components/home/TestimonialsSection";
 import WhyChooseUsSection from "@/src/components/home/WhyChooseUsSection";
 import CTASection from "@/src/components/home/CTASection";
-import Footer from "@/src/components/home/Footer";
+import Footer from "@/src/components/Footer";
 
 export default function Home() {
   return (

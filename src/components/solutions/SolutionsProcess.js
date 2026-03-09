@@ -7,27 +7,27 @@ import { Search, Lightbulb, Code, ShieldCheck, Rocket } from "lucide-react";
 const STEPS = [
   {
     title: "Requirement Analysis",
-    desc: "We deeply understand your business challenges and project goals.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     icon: Search,
   },
   {
     title: "Strategy & Planning",
-    desc: "We design scalable solution architecture and roadmap.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     icon: Lightbulb,
   },
   {
     title: "Development",
-    desc: "Our experts build secure and high-performance solutions.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor..",
     icon: Code,
   },
   {
     title: "Testing & Security",
-    desc: "Rigorous testing ensures quality, reliability, and protection.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     icon: ShieldCheck,
   },
   {
     title: "Deployment & Support",
-    desc: "Smooth launch with continuous monitoring and support.",
+    desc: " Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.",
     icon: Rocket,
   },
 ];
@@ -56,8 +56,7 @@ export default function SolutionsProcess() {
             How Our Solutions Work
           </h2>
           <p className="mt-4 md:mt-6 text-base md:text-lg text-foreground/70 max-w-2xl mx-auto">
-            Our proven process ensures efficient delivery, innovation, and
-            long-term success for your business.
+             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
           </p>
         </motion.div>
 
